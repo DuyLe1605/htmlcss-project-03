@@ -296,3 +296,122 @@ a {
     font-weight: bolder;
     line-height: 2.8rem; /* 175% */
 }
+
+/* Features */
+.feature {
+    margin-top: 170px;
+}
+.feature__inner {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.feature__images {
+    width: 570px;
+    height: 491px;
+    position: relative;
+}
+.feature__img:first-child,
+.feature__img:last-child {
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
+    border-radius: 6px;
+}
+.feature__img:first-child {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 512px;
+    height: 370px;
+    background: url(<path-to-image>) lightgray -1.5px 0px / 108.398% 100% no-repeat;
+}
+.feature__img:last-child {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 332px;
+    height: 370px;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+.feature__content {
+    width: 470px;
+}
+.feature__heading,
+.feature__desc {
+    text-align: left;
+}
+.feature__cta {
+    margin-top: 38px;
+}
+
+/* member */
+.member {
+    margin-top: 170px;
+}
+.member__cta {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 38px;
+}
+.member__list {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+}
+
+.member-item__bg {
+    border-radius: 0.6rem;
+    background: #eaf6ff;
+    padding-top: 28px;
+    overflow: hidden;
+}
+.member-item__img {
+    object-fit: cover;
+    display: block;
+    max-width: 100%;
+    height: 290px;
+    transition: 0.25s;
+}
+.member-item__title {
+    margin-top: 12px;
+    color: #10375c;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    line-height: 2.8rem;
+}
+.member-item__desc {
+    color: #575f66;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 2.6rem; /* 185.714% */
+}
+.member-item:hover .member-item__img {
+    transform: scale(1.1);
+}
+.member__control {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+.member__control-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #575f66;
+    border: 1px solid #575f66;
+    outline: none;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+.member__control-btn:hover {
+    background-color: #2e80ce;
+    color: #fff;
+    border-color: #2e80ce;
+}
