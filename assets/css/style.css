@@ -16,6 +16,14 @@ body {
 }
 
 /* Common */
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
 a {
     text-decoration: none;
 }
@@ -26,9 +34,11 @@ a {
 }
 
 .btn {
+    --height: 60px;
+
     display: inline-block;
-    height: 60px;
-    line-height: 60px;
+    height: var(--height);
+    line-height: var(--height);
     min-width: 205px;
     text-align: center;
     padding: 0 20px;
@@ -583,4 +593,97 @@ a {
 .appointment__desc {
     width: 61.7rem;
     margin-bottom: 38px;
+}
+/* footer */
+.footer {
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--header-bg);
+    margin-top: 170px;
+    padding-top: 100px;
+    padding-bottom: 42px;
+}
+.footer__social-btn {
+    display: inline-block;
+}
+.footer__row {
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+    column-gap: 78px;
+}
+.footer__desc,
+.footer__link {
+    color: #a9b3bb;
+    font-size: 1.6rem;
+}
+.footer__desc {
+    line-height: 2.8rem;
+    margin-top: 20px;
+}
+.footer__link {
+    line-height: 2.6rem;
+    white-space: nowrap;
+    transition: 0.25s;
+}
+.footer__link:hover {
+    color: #fff;
+}
+.footer__heading {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.8rem;
+    margin-bottom: 20px;
+}
+.footer__list {
+    margin-bottom: 28px;
+}
+.footer__item {
+    margin-bottom: 10px;
+}
+.footer__social {
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 28px;
+}
+
+.footer-form__submit {
+    --height: 4.6rem;
+    font-size: 1.4rem;
+    border-radius: 0.4rem;
+    min-width: 10.8rem;
+    height: var(--height);
+}
+
+.footer-form {
+    display: flex;
+    column-gap: 12px;
+    margin-top: 10px;
+}
+.footer-form__input {
+    outline: none;
+    width: 21.2rem;
+    height: 4.6rem;
+    border-radius: 0.4rem;
+    border: 1px solid #406181;
+    background-color: transparent;
+    padding: 0 10px;
+    color: #9ca8b1;
+    font-size: 1.4rem;
+}
+.footer-form__input::placeholder {
+    color: #9ca8b1;
+    font-size: 1.4rem;
+    line-height: 1.86rem;
+}
+
+.footer__coppyright {
+    border-top: 1px solid #406181;
+    padding-top: 28px;
+}
+
+.footer__coppyright-txt {
+    color: #aab3ba;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 2.6rem; /* 185.714% */
 }
